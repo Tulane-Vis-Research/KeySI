@@ -9,8 +9,8 @@ This repository contains the code and data for the accepted KeySI paper.
 ```text
 .
 ├── 20news_6class_cleaned.csv
-├── Keysi.py
-├── keysiformal.py
+├── Keysi_demo_video.mp4
+├── pyproject.toml
 ├── requirements.txt
 ├── scripts/check_environment.py
 └── src/keysi_app/
