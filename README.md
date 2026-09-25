@@ -16,8 +16,25 @@ This repository contains the code and data for the accepted KeySI paper.
 └── src/keysi_app/
     ├── __init__.py
     ├── __main__.py
-    └── keysiformal.py
+    ├── application.py
+    ├── core.py
+    ├── training.py
+    ├── ui.py
+    └── callbacks/
+        ├── exploration.py
+        ├── refinement.py
+        └── training_view.py
 ```
+
+## Code structure
+
+- `core.py`: shared configuration, data loading, preprocessing, and encoder definitions.
+- `training.py`: retrieval, persistence, triplet/prototype training, and evaluation.
+- `ui.py`: Dash application instance and page layout.
+- `callbacks/exploration.py`: keyword grouping, exploration, and initial training interactions.
+- `callbacks/training_view.py`: trained-result inspection interactions.
+- `callbacks/refinement.py`: document reassignment and refinement training interactions.
+- `application.py`: application assembly and callback registration.
 
 ## Data
 
